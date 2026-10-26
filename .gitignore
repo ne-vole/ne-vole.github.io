@@ -1,4 +1,6 @@
 *.pdf
 *.zip
+AUDIT_REPORT_*.md
+audit-data-*.json
 Thumbs.db
 .DS_Store
