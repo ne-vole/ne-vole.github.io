@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeVOLE – jednoduchý občanský rozcestník na obranu nezávislosti médií veřejné služby a pro věcná podání českým institucím.">
+  <meta name="theme-color" content="#f2efe6">
+  <meta name="nevole-version" content="1.01">
+  <meta name="nevole-public-url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="NeVOLE">
+  <meta property="og:title" content="NeVOLE – Veřejná média patří veřejnosti.">
+  <meta property="og:description" content="Nezávislá občanská iniciativa. Přečtěte si fakta, vytvořte si vlastní názor a rozhodněte, zda se chcete vyjádřit nebo informace předat dál.">
+  <meta property="og:image" content="social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NeVOLE – Veřejná média patří veřejnosti.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NeVOLE – Veřejná média patří veřejnosti.">
+  <meta name="twitter:description" content="Nezávislá občanská iniciativa. Přečtěte si fakta, vytvořte si vlastní názor a rozhodněte, zda se chcete vyjádřit nebo informace předat dál.">
+  <meta name="twitter:image" content="social-preview.png">
+  <title>NeVOLE — veřejná média patří veřejnosti</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header" id="nahoru">
+    <a class="brand" href="#nahoru" aria-label="NeVOLE – úvod">
+      <span class="brand-mark" aria-hidden="true">N!</span>
+      <span>NeVOLE</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Hlavní navigace">
+      <a href="#prohlaseni">Prohlášení</a>
+      <a href="#napiste">Napsat podnět</a>
+      <a href="#postupy">Jak postupovat</a>
+      <a href="#zdroje">Zdroje</a>
+    </nav>
+  </header>
+
+  <main id="obsah">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Občané nejsou kompars.</p>
+      <h1 id="hero-title">
+        <span class="hero-title-band">
+          <span class="hero-title-band-text">Veřejná média</span>
+        </span>
+        <em class="hero-title-signal">patří veřejnosti.</em>
+      </h1>
+      <div class="hero-bottom">
+        <p>Nechceme média vlády. Nechceme média opozice. Chceme Českou televizi a Český rozhlas, které mohou pracovat svobodně, odpovědně a bez politického nátlaku.</p>
+      </div>
+    </section>
+
+    <section class="entry-actions" aria-label="Dvě možnosti, jak se zapojit">
+      <a class="entry-action" href="#napiste">
+        <span>01</span>
+        <strong>CHCI SE VYJÁDŘIT</strong>
+        <small>Vyberu jednu instituci, upravím hotový dopis a sám ho odešlu.</small>
+      </a>
+      <button class="entry-action" type="button" id="shareTop" data-share-trigger>
+        <span>02</span>
+        <strong>POŠLU TO DÁL</strong>
+        <small>Pošlu dál odkaz na tento web. Bez sbírání kontaktů a bez sledování.</small>
+      </button>
+      <p class="share-status" id="shareStatus" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="statement" id="prohlaseni" aria-labelledby="statement-title">
+      <div class="statement-body">
+        <h2 id="statement-title">Nejsme ovce</h2>
+        <div class="statement-text">
+          <p>Česká televize a Český rozhlas nejsou kořist pro vítěze voleb ani hlásná trouba jedné strany. Jsou to média veřejné služby. Platíme je proto, aby ověřovala fakta, dávala prostor různým názorům a hlídala moc — dnešní i zítřejší.</p>
+          <p>Neříkáme, že každý omyl je zločin. Neoznačujeme nikoho za viníka bez důkazů. Žádáme však, aby zásadní změny, personální kroky i nakládání s veřejnými penězi byly vysvětlitelné, kontrolovatelné a v souladu se zákonem.</p>
+          <p>Když máme pochybnost, máme právo se ptát. Když vidíme konkrétní problém, máme právo požádat příslušnou instituci, aby jej prověřila.</p>
+          <p class="statement-signoff">Klidně. Věcně. Bez nálepek a bez strachu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources legislative-status" aria-labelledby="legislative-status-title">
+      <div class="section-label">Stav sněmovního tisku 231</div>
+      <div class="section-heading">
+        <h2 id="legislative-status-title">Co se stalo?</h2>
+        <p>Stav legislativního procesu ověřen k 26. říjnu 2026. Jde o stav k tomuto dni; při pozdější aktualizaci webu musí být znovu ověřen.</p>
+      </div>
+      <div class="legal-note">
+        <p>Ve dnech 23. a 24. října 2026 Poslanecká sněmovna projednávala návrh na zrušení rozhlasových a televizních poplatků a jejich nahrazení financováním ze státního rozpočtu.</p>
+        <p>Po nočním jednání návrh prošel prvním čtením a pokračuje do dalšího projednávání.</p>
+        <p>O konečném přijetí zákona ale zatím rozhodnuto nebylo.</p>
+        <p>Právě nyní je tedy prostor pro další odbornou i veřejnou diskusi o jeho podobě a důsledcích.</p>
+      </div>
+    </section>
+
+    <section class="email-builder" id="napiste" aria-labelledby="email-title">
+      <div class="section-label">Občanské vyjádření</div>
+      <div class="section-heading">
+        <h2 id="email-title">Vyjádřete se jedné instituci.</h2>
+        <p>Vyberte jednoho adresáta. Formulář připraví celý dopis, dva nejdůležitější podklady i podpis. Text můžete před otevřením své pošty libovolně upravit.</p>
+      </div>
+
+      <div class="builder-layout">
+        <form id="emailForm" class="email-form" novalidate>
+          <div class="form-field full">
+            <label for="route">Kam se chcete obrátit? <span aria-hidden="true">*</span></label>
+            <select id="route" name="route" required>
+              <option value="">Vyberte jednoho adresáta</option>
+              <optgroup label="České instituce">
+                <option value="A">Poslanecká sněmovna</option>
+                <option value="B">Výbor pro média a kulturu</option>
+                <option value="C">Ministerstvo kultury</option>
+                <option value="D">Senát Parlamentu ČR</option>
+                <option value="E">Rada pro rozhlasové a televizní vysílání</option>
+              </optgroup>
+              <optgroup label="Evropské a odborné instituce">
+                <option value="F">Zastoupení Evropské komise v ČR</option>
+                <option value="I">European Centre for Press and Media Freedom (ECPMF)</option>
+              </optgroup>
+            </select>
+            <p class="field-hint">Vždy vznikne jen jedna zpráva pro jednoho adresáta. Nic se samo neodešle.</p>
+          </div>
+
+          <article class="route-card full" id="routeCard" aria-live="polite" hidden>
+            <span>Vybraný adresát</span>
+            <h3 id="routeName"></h3>
+            <dl>
+              <div><dt>Doručení</dt><dd id="routeDelivery"></dd></div>
+              <div><dt>Výchozí podklady</dt><dd id="routeDefaults"></dd></div>
+            </dl>
+            <div class="route-links"><a id="routeContact" href="#" target="_blank" rel="noopener">Ověřit kontakt na oficiálním webu ↗</a></div>
+            <p class="route-notice" id="routeNotice" hidden></p>
+          </article>
+
+          <div class="form-field full" id="fixedRecipientField">
+            <label for="recipientDisplay">Příjemce</label>
+            <input id="recipientDisplay" type="text" readonly aria-readonly="true">
+          </div>
+
+          <div class="form-field full">
+            <label for="subjectInput">Předmět <span aria-hidden="true">*</span></label>
+            <input id="subjectInput" name="subjectInput" type="text" maxlength="300" required>
+          </div>
+
+          <div class="form-field full">
+            <label for="greetingInput">Oslovení</label>
+            <textarea id="greetingInput" name="greetingInput" rows="3" maxlength="500"></textarea>
+          </div>
+
+          <div class="form-field full">
+            <label for="messageBody">Text dopisu <span aria-hidden="true">*</span></label>
+            <textarea id="messageBody" name="messageBody" rows="18" maxlength="12000" required></textarea>
+            <p class="field-hint">Hotový text můžete upravit, smazat nebo nahradit vlastním.</p>
+          </div>
+
+          <fieldset class="documents-fieldset full">
+            <legend>Podklady k dopisu</legend>
+            <p class="documents-explainer">Jde jen o odkazy na původní zdroje. Web žádné dokumenty nestahuje ani neukládá.</p>
+            <p class="default-documents-label">Vybrané podklady</p>
+            <div class="document-list" id="defaultDocumentList"></div>
+            <div id="moreDocuments" hidden>
+              <div id="otherDocumentList"></div>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="closingInput">Závěrečný pozdrav</label>
+            <input id="closingInput" name="closingInput" type="text" maxlength="120">
+          </div>
+
+          <div class="form-field">
+            <label for="signatureInput">PODPIS <span aria-hidden="true">*</span></label>
+            <textarea id="signatureInput" name="signatureInput" rows="2" maxlength="240" required autocomplete="name" placeholder="Jméno a příjmení"></textarea>
+            <p class="field-hint">Podpis zůstane zachován i při změně adresáta.</p>
+          </div>
+
+          <div class="form-actions full">
+            <a class="button primary" id="openOutlook" target="_blank" rel="noopener noreferrer" aria-disabled="true">OTEVŘÍT V OUTLOOKU</a>
+            <button class="button secondary" type="button" id="copyEmail">ZKOPÍROVAT DO SVÉ POŠTY</button>
+            <button class="button secondary" type="button" id="shareForm" data-share-trigger>POŠLU TO DÁL</button>
+          </div>
+          <div class="outlook-options full">
+            <a class="text-link" id="openWorkOutlook" target="_blank" rel="noopener noreferrer" aria-disabled="true">Používám pracovní Outlook (Microsoft 365)</a>
+            <button class="text-button" type="button" id="retryCopyBody" hidden>Zkusit znovu zkopírovat zprávu</button>
+          </div>
+          <p class="privacy-note full">Dopis můžeš upravit podle sebe. Nikdo ho za tebe neposílá.</p>
+          <p class="form-status full" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="email-preview" aria-labelledby="preview-title">
+          <div class="preview-topline"><span>Náhled e-mailu</span><span id="previewLength">0 znaků</span></div>
+          <h3 id="preview-title">Nejprve vyberte adresáta.</h3>
+          <dl>
+            <div><dt>Komu</dt><dd class="preview-value"><span id="previewTo">—</span><button class="preview-copy" type="button" id="copyRecipient" aria-label="Zkopírovat adresu příjemce" disabled>Kopírovat</button></dd></div>
+            <div><dt>Předmět</dt><dd class="preview-value"><span id="previewSubject">—</span><button class="preview-copy" type="button" id="copySubject" aria-label="Zkopírovat předmět" disabled>Kopírovat</button></dd></div>
+            <div><dt>Doručení</dt><dd id="previewDelivery">—</dd></div>
+          </dl>
+          <p class="preview-note">Nic se zatím neodeslalo. Text můžete upravit a před odesláním znovu zkontrolovat.</p>
+          <pre id="previewBody">Po výběru adresáta se zde zobrazí celý připravený dopis.</pre>
+          <p class="length-warning" id="lengthWarning" hidden>Dopis je příliš dlouhý pro spolehlivé vložení do odkazu. Při otevření Outlooku se celý text bezpečně zkopíruje do schránky.</p>
+        </aside>
+      </div>
+
+      <section class="deadline-explainer" aria-labelledby="deadline-title">
+        <div>
+          <span>TVŮJ HLAS MÁ SMYSL</span>
+          <h3 id="deadline-title">Co se stane, když se ozvu?</h3>
+          <p>Nemusíš být právník, abys mohl říct, co si myslíš. Můžeš se obrátit na odpovědné instituce, požádat o vysvětlení nebo jednoduše upozornit ostatní. Každý se rozhoduje sám.</p>
+        </div>
+        <dl>
+          <div><dt>Napíšu do Parlamentu</dt><dd>Dáš poslancům nebo senátorům najevo své obavy a požádáš je, aby se jimi zabývali. Nemusíš zastupovat žádnou stranu ani iniciativu. Tvůj dopis sám projednávání návrhu nezastaví, ale je legitimním občanským vyjádřením.</dd></div>
+          <div><dt>Obrátím se na další instituce</dt><dd>Můžeš napsat příslušnému úřadu, evropské instituci nebo odborné organizaci. Každá má jiné možnosti a pravomoci. Běžný občanský e-mail nezaručuje odpověď v určité lhůtě ani konkrétní výsledek.</dd></div>
+          <div><dt>Prostě to pošlu dál</dt><dd>Nechceš nikam psát? Nevadí. Sdílej odkaz s ostatními. Ať se dozvědí, co se děje, přečtou si podklady a sami se rozhodnou, co si o tom myslí. Diskuse patří mezi lidi, ne jen do Parlamentu.</dd></div>
+        </dl>
+      </section>
+
+      <div class="other-paths" aria-label="Jiné způsoby podání">
+        <article>
+          <span>Chcete oficiální stanovisko k veřejné věci?</span>
+          <h3>Zvažte petici.</h3>
+          <p>Petici může podat jeden člověk i skupina. Příslušný státní orgán má do 30 dnů písemně odpovědět k jejímu obsahu a způsobu vyřízení. Pro elektronickou petici použijte státní službu ePetice.</p>
+          <a href="https://portal.gov.cz/rozcestniky/epetice-RZC-110" target="_blank" rel="noopener">Otevřít oficiální ePetici ↗</a>
+        </article>
+        <article>
+          <span>Máte konkrétní fakta o možném trestném činu?</span>
+          <h3>Neposílejte běžný e-mail naslepo.</h3>
+          <p>Trestní oznámení lze podat na policii nebo státním zastupitelství. Elektronicky použijte datovou schránku nebo uznávaný elektronický podpis.</p>
+          <a href="https://policie.gov.cz/postup-pri-podani-trestniho-oznameni" target="_blank" rel="noopener">Oficiální postup Policie ČR ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="institutions" id="rozcestnik" aria-labelledby="institutions-title">
+      <div class="section-label">Kdo řeší co</div>
+      <div class="section-heading">
+        <h2 id="institutions-title">Pište tam, kde mohou věc řešit.</h2>
+        <p>Stejný text rozeslaný naslepo desítkám adres zpravidla nepomůže. Každá instituce má jiné pravomoci.</p>
+      </div>
+      <div class="institution-list">
+        <article><span class="tag">Úřad vlády</span><h3>Konkrétní návrh před 2. nebo 3. čtením</h3><p>Uveďte název nebo číslo sněmovního tisku, co má být prověřeno a které dokumenty mají být posouzeny. Úřad vlády může řešit jen úkony a podklady ve své působnosti; postup Sněmovny řídí sama Poslanecká sněmovna.</p><a href="https://vlada.gov.cz/cz/urad-vlady/elektronicka-podatelna/elektronicka-podatelna-16034/" target="_blank" rel="noopener">Elektronická podatelna ↗</a></article>
+        <article><span class="tag">RRTV</span><h3>Konkrétní možné porušení pravidel vysílání</h3><p>Označte stanici, pořad, datum, čas a přesnou pasáž. RRTV posuzuje zákonné povinnosti provozovatele, nikoli pouhou nespokojenost s názorem pořadu.</p><a href="https://www.rrtv.gov.cz/cz/static/rada-on-line/e-podatelna/index.htm" target="_blank" rel="noopener">Elektronická podatelna ↗</a></article>
+        <article><span class="tag">Evropská komise</span><h3>Systémové porušení práva EU státem</h3><p>Komise neřeší jednotlivý pořad ani nepřezkoumává běžné rozhodnutí českého úřadu. Smysl má doložený problém v jednání nebo nečinnosti státu, který může odporovat právu EU.</p><a href="https://commission.europa.eu/about/contact/problems-and-complaints/complaints-about-breaches-eu-law-member-states/report-breach-eu-law-eu-country_cs" target="_blank" rel="noopener">Oficiální postup Komise ↗</a></article>
+      </div>
+    </section>
+
+    <section class="paths" id="postupy" aria-labelledby="paths-title">
+      <div class="section-label">Pět různých cest</div>
+      <div class="section-heading">
+        <h2 id="paths-title">Nezaměňujte nástroje.</h2>
+        <p>Rozhoduje obsah, ne nadpis. Tohle je praktická orientace, ne individuální právní rada.</p>
+      </div>
+      <div class="accordion">
+        <details open><summary><span>01</span><strong>Podnět</strong><em>„Prosím, prověřte to.“</em></summary><div class="detail-body"><p>Jednoduché upozornění příslušné instituci na konkrétní možné pochybení. Běžný občanský podnět nemá obecnou zákonnou lhůtu na odpověď. Zvláštní pravidlo platí u správního orgánu: požádáte-li například RRTV výslovně podle § 42 správního řádu, má do 30 dnů sdělit, jak s podnětem naložila.</p></div></details>
+        <details><summary><span>02</span><strong>Petice</strong><em>„Žádám stanovisko k veřejné věci.“</em></summary><div class="detail-body"><p>Žádost, návrh nebo stížnost ve veřejném či jiném společném zájmu podle zákona č. 85/1990 Sb. Petici může podat jednotlivec i více lidí. Příslušný státní orgán má do 30 dnů písemně odpovědět k jejímu obsahu a způsobu vyřízení. Petice nenahrazuje trestní oznámení ani opravný prostředek.</p></div></details>
+        <details><summary><span>03</span><strong>Žádost podle „stošestky“</strong><em>„Dejte mi existující informace.“</em></summary><div class="detail-body"><p>Žádost podle zákona č. 106/1999 Sb. slouží k získání konkrétních zaznamenaných informací vztahujících se k působnosti povinného subjektu. Základní lhůta je 15 dnů; ze zákonných důvodů ji lze prodloužit nejvýše o 10 dnů. Zákon neslouží k vynucení názoru, budoucího rozhodnutí nebo vytvoření nové analýzy.</p></div></details>
+        <details><summary><span>04</span><strong>Stížnost podle správního řádu</strong><em>„Úřad se ke mně choval nebo postupoval nesprávně.“</em></summary><div class="detail-body"><p>Stížnost podle § 175 správního řádu slouží proti nevhodnému chování úředních osob nebo postupu správního orgánu, pokud zákon nenabízí jiný prostředek ochrany. Není to univerzální název pro každou nespokojenost.</p></div></details>
+        <details><summary><span>05</span><strong>Trestní oznámení</strong><em>„Konkrétní fakta mohou nasvědčovat trestnému činu.“</em></summary><div class="detail-body"><p>Může je podat kdokoli na kterémkoli oddělení Policie ČR nebo u státního zastupitelství. Nemusíte určit paragraf; popište skutek a předejte dostupné podklady. Pouhý nesouhlas nebo dojem nestačí.</p></div></details>
+      </div>
+    </section>
+
+    <section class="evidence" aria-labelledby="evidence-title">
+      <div><div class="section-label">Než odešlete</div><h2 id="evidence-title">Pět minut, které podání zachrání.</h2></div>
+      <ol class="checklist">
+        <li><span>01</span><div><strong>Označte věc</strong><p>pořad, rozhodnutí, dokument, datum a čas</p></div></li>
+        <li><span>02</span><div><strong>Uložte podklad</strong><p>odkaz, snímek, dokument nebo jméno svědka</p></div></li>
+        <li><span>03</span><div><strong>Oddělte jisté od nejistého</strong><p>„v dokumentu je“ není totéž jako „domnívám se“</p></div></li>
+        <li><span>04</span><div><strong>Napište požadavek</strong><p>co má adresát prověřit nebo poskytnout</p></div></li>
+        <li><span>05</span><div><strong>Uschovejte doručení</strong><p>odeslaný e-mail, datovou zprávu nebo dodejku</p></div></li>
+      </ol>
+      <p class="warning"><strong>Pozor:</strong> veřejné šíření neověřených obvinění může poškodit lidi i samotnou věc. Instituci pošlete fakta; podezření vždy označte jako podezření.</p>
+    </section>
+
+    <section class="sources" id="zdroje" aria-labelledby="sources-title">
+      <div class="section-label">Ověřené zdroje</div>
+      <div class="section-heading">
+        <h2 id="sources-title">Neberte nás za slovo. Ověřte si to.</h2>
+        <p>Legislativní stav tisku 231, právní a kontaktní informace byly naposledy ověřeny k 26. říjnu 2026. Jde o stav k tomuto dni; při pozdější aktualizaci musí být znovu ověřen. Před odesláním vždy zkontrolujte aktuální kontakt na webu adresáta.</p>
+      </div>
+      <ul class="source-list">
+        <li><a href="https://www.psp.cz/sqw/historie.sqw?o=10&amp;t=231" target="_blank" rel="noopener">Průběh projednávání sněmovního tisku 231 — Poslanecká sněmovna</a></li>
+        <li><a href="https://psp.cz/sqw/text/hl.sqw?d=20261024&amp;o=10&amp;s=34" target="_blank" rel="noopener">Hlasování ze dne 24. října 2026 — Poslanecká sněmovna</a></li>
+        <li><a href="https://www.ceskenoviny.cz/zpravy/koalice-poslala-do-druheho-cteni-navrh-zrusit-poplatky-pro-ct-a-cro/2891827" target="_blank" rel="noopener">Dokončení prvního čtení a výsledky opozičních návrhů — ČTK</a></li>
+        <li><a href="https://www.irozhlas.cz/zpravy-domov/otazky-a-odpovedi-co-znamena-schvaleni-navrhu-o-koncesionarskych-poplatcich-a-co_2610241447_pik" target="_blank" rel="noopener">Co znamená dokončení prvního čtení a co následuje — iROZHLAS</a></li>
+        <li><a href="https://e-sbirka.gov.cz/sb/1990/85?zalozka=text" target="_blank" rel="noopener">Zákon č. 85/1990 Sb., o právu petičním — e‑Sbírka</a></li>
+        <li><a href="https://mv.gov.cz/petice-2" target="_blank" rel="noopener">Praktické informace k peticím — Ministerstvo vnitra</a></li>
+        <li><a href="https://portal.gov.cz/informace/podani-zadosti-o-poskytnuti-informace-INF-308" target="_blank" rel="noopener">Žádost podle zákona č. 106/1999 Sb. — gov.cz</a></li>
+        <li><a href="https://e-sbirka.gov.cz/sb/2004/500?zalozka=text" target="_blank" rel="noopener">Zákon č. 500/2004 Sb., správní řád — e‑Sbírka</a></li>
+        <li><a href="https://e-sbirka.gov.cz/sb/1993/2?zalozka=text" target="_blank" rel="noopener">Listina základních práv a svobod, zejména čl. 17 — e‑Sbírka</a></li>
+        <li><a href="https://e-sbirka.gov.cz/sb/1991/483?zalozka=text" target="_blank" rel="noopener">Zákon č. 483/1991 Sb., o České televizi — e‑Sbírka</a></li>
+        <li><a href="https://e-sbirka.gov.cz/sb/1991/484?zalozka=text" target="_blank" rel="noopener">Zákon č. 484/1991 Sb., o Českém rozhlasu — e‑Sbírka</a></li>
+        <li><a href="https://e-sbirka.gov.cz/sb/2001/231?zalozka=text" target="_blank" rel="noopener">Zákon č. 231/2001 Sb., o vysílání — e‑Sbírka</a></li>
+        <li><a href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:12016P011" target="_blank" rel="noopener">Čl. 11 Listiny základních práv EU — EUR‑Lex</a></li>
+        <li><a href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32024R1083" target="_blank" rel="noopener">Nařízení (EU) 2024/1083 o svobodě médií — EUR‑Lex</a></li>
+        <li><a href="https://commission.europa.eu/about/contact/problems-and-complaints/complaints-about-breaches-eu-law-member-states/report-breach-eu-law-eu-country_cs" target="_blank" rel="noopener">Stížnost na porušení práva EU členským státem — Evropská komise</a></li>
+        <li><a href="https://e-sbirka.gov.cz/sb/1969/2#par_28" target="_blank" rel="noopener">Postavení Úřadu vlády, § 28 kompetenčního zákona — e‑Sbírka</a></li>
+        <li><a href="https://www.psp.cz/sqw/hp.sqw?k=331" target="_blank" rel="noopener">Legislativní proces a fáze čtení — Poslanecká sněmovna</a></li>
+        <li><a href="https://vlada.gov.cz/cz/urad-vlady/poskytovani-informaci/povinne-zverejnovane-informace-126538/" target="_blank" rel="noopener">Oficiální kontakty Úřadu vlády ČR</a></li>
+        <li><a href="https://policie.gov.cz/postup-pri-podani-trestniho-oznameni" target="_blank" rel="noopener">Postup při podání trestního oznámení — Policie ČR</a></li>
+        <li><a href="https://www.rrtv.gov.cz/cz/static/o-rade/poslani-rady/index.htm" target="_blank" rel="noopener">Poslání a působnost RRTV</a></li>
+        <li><a href="https://www.rrtv.gov.cz/cz/static/rada-on-line/e-podatelna/index.htm" target="_blank" rel="noopener">Elektronická podatelna RRTV</a></li>
+      </ul>
+      <p class="legal-note">Tento web je občanský informační projekt. Nenahrazuje právní službu a neposuzuje vinu konkrétních osob. Při běžícím řízení nebo krátké lhůtě se poraďte s advokátem.</p>
+    </section>
+  </main>
+
+  <dialog class="share-dialog copy-email-dialog" id="copyEmailDialog" aria-labelledby="copyEmailDialogTitle" aria-describedby="copyEmailDialogDescription">
+    <div class="share-dialog-inner">
+      <button class="share-close" type="button" data-copy-dialog-close aria-label="Zavřít okno pro kopírování e-mailu">×</button>
+      <p class="section-label">Připravený e-mail</p>
+      <h2 id="copyEmailDialogTitle">Zkopírujte údaje do své pošty</h2>
+      <p id="copyEmailDialogDescription">Každou část zkopírujte zvlášť. Nic se neodesílá automaticky.</p>
+
+      <div class="copy-email-sections">
+        <section class="copy-email-section" aria-labelledby="copyRecipientLabel">
+          <h3 id="copyRecipientLabel">KOMU</h3>
+          <input class="copy-email-value" id="copyDialogRecipient" type="text" readonly aria-label="Adresa příjemce">
+          <button class="button secondary" type="button" id="copyDialogRecipientButton">KOPÍROVAT</button>
+          <p class="copy-email-status" id="copyDialogRecipientStatus" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="copy-email-section" aria-labelledby="copySubjectLabel">
+          <h3 id="copySubjectLabel">PŘEDMĚT</h3>
+          <textarea class="copy-email-value" id="copyDialogSubject" rows="2" readonly aria-label="Předmět zprávy"></textarea>
+          <button class="button secondary" type="button" id="copyDialogSubjectButton">KOPÍROVAT</button>
+          <p class="copy-email-status" id="copyDialogSubjectStatus" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="copy-email-section" aria-labelledby="copyBodyLabel">
+          <h3 id="copyBodyLabel">TEXT ZPRÁVY</h3>
+          <textarea class="copy-email-value copy-email-message" id="copyDialogBody" rows="14" readonly aria-label="Celý text zprávy"></textarea>
+          <button class="button secondary" type="button" id="copyDialogBodyButton">KOPÍROVAT CELÝ TEXT</button>
+          <p class="copy-email-status" id="copyDialogBodyStatus" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+
+      <p class="copy-email-help">Otevřete svůj Gmail, Seznam, Proton nebo jinou poštu. Připravené údaje postupně vložte do odpovídajících polí.</p>
+      <div class="copy-email-dialog-actions">
+        <button class="button primary" type="button" data-copy-dialog-close>ZAVŘÍT</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="share-dialog" id="shareDialog" aria-labelledby="shareDialogTitle" aria-describedby="shareDialogDescription">
+    <div class="share-dialog-inner">
+      <button class="share-close" type="button" id="closeShareDialog" aria-label="Zavřít nabídku sdílení">×</button>
+      <p class="section-label">Pošlu to dál</p>
+      <h2 id="shareDialogTitle">Kde chcete Nevoli sdílet?</h2>
+      <p id="shareDialogDescription">Sdílí se pouze veřejný odkaz na web. Obsah formuláře ani osobní údaje se nepřenášejí.</p>
+      <div class="share-options" aria-label="Možnosti sdílení">
+        <a class="share-option" data-share-network="facebook" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">f</span>Facebook</a>
+        <a class="share-option" data-share-network="whatsapp" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">W</span>WhatsApp</a>
+        <a class="share-option" data-share-network="x" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">X</span>X</a>
+        <a class="share-option" data-share-network="telegram" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">T</span>Telegram</a>
+        <a class="share-option" data-share-network="linkedin" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">in</span>LinkedIn</a>
+        <button class="share-option" type="button" id="copyShareLink"><span aria-hidden="true">⧉</span>Kopírovat odkaz</button>
+        <button class="share-option share-native" type="button" id="systemShare" hidden><span aria-hidden="true">↗</span>Sdílet přes telefon</button>
+      </div>
+      <p class="share-local-warning" id="shareLocalWarning" role="note" hidden>Pro sociální sítě bude odkaz a jeho náhled plně funkční až po publikování webu na veřejné HTTPS adrese.</p>
+      <p class="share-dialog-status" id="shareDialogStatus" role="status" aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark" aria-hidden="true">N!</span><strong>NeVOLE</strong></div>
+    <p>Veřejná média patří veřejnosti.</p>
+    <a href="mailto:nevole@tutamail.com">nevole@tutamail.com</a>
+    <p class="footer-small">© <span id="year">2026</span> NeVOLE · Občanský informační projekt</p>
+  </footer>
+</body>
+</html>
